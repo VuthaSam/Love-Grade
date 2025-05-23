@@ -1,0 +1,26 @@
+    body {
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .card {
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .dark-mode {
+      background-color: #121212;
+      color: #f1f1f1;
+    }
+    .dark-mode .card {
+      background-color: #1f1f1f;
+    }
+
+    .dark-mode .form-label{
+      color: white;
+    }
+
+    .form-control, .form-select {
+      border-radius: 0.5rem;
+    }
+
+    .form-label {
+      color: inherit;
+    }
