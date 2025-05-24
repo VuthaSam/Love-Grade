@@ -21,7 +21,12 @@ function editSubject(name, subject) {
   const entry = data[name]?.find(entry => entry.subject === subject);
   if (!entry) return;
 
-  const newMarks = parseInt(prompt(`Edit marks for ${subject} (0-100):`, entry.marks));
+  const newMark = prompt(`Edit marks for ${subject} (0-100):`, entry.marks);
+  if (newMarks === null) {
+    return;
+  }
+  
+  const newMarks = parseInt(newMark);
   if (isNaN(newMarks) || newMarks < 0 || newMarks > 100) {
     alert("Invalid marks.");
     return;
