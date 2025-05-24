@@ -22,7 +22,7 @@ function editSubject(name, subject) {
   if (!entry) return;
 
   const newMark = prompt(`Edit marks for ${subject} (0-100):`, entry.marks);
-  if (newMarks === null) {
+  if (newMark === null) {
     return;
   }
   
